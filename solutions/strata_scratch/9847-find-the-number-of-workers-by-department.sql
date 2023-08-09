@@ -6,5 +6,5 @@
 select department, count(1) worker_count
 from worker
 where joining_date >= '2014-04-01'
-group by department
+group by 1
 order by worker_count desc;
